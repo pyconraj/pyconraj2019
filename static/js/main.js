@@ -9,6 +9,10 @@ $(document).ready(function(e){
         checkMenu();
     });
 
+    function init(){
+        checkMenu();
+    }
+
     // Menu Checker
     function checkMenu(){
         let scrollH = $(document).scrollTop();
@@ -18,4 +22,6 @@ $(document).ready(function(e){
             menu.removeClass('fixed-layout');
         }
     }
+
+    init();
 });
