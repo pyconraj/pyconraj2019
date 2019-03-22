@@ -9,9 +9,16 @@ $(document).ready(function (e) {
         checkMenu();
     });
 
+    // Conference Table Hanlder
+    $(".conference-timings-day").on('click', function(e){
+        e.preventDefault();
+        showSchedule($(this));
+    })
+
     function init() {
         checkMenu();
         hidePreloader();
+        showSchedule($(".conference-timings-day.active"));
     }
 
     // Menu Checker
@@ -29,6 +36,20 @@ $(document).ready(function (e) {
         setTimeout(function () {
             $("#preloader").fadeOut();
         }, 500);
+    }
+
+    function showSchedule(target) {
+        let current = $(".conference-timings-day.active");
+        let currentTarget = $(current.attr('data-target'));
+        if(current != undefined){
+            currentTarget.fadeOut();
+            current.removeClass('active');
+        }
+        let newTarget = $(target.attr('data-target'));
+        setTimeout(function(){
+            newTarget.fadeIn();
+        }, 500);
+        target.addClass('active');
     }
 
     init();
