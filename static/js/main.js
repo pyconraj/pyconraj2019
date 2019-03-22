@@ -18,6 +18,7 @@ $(document).ready(function (e) {
     function init() {
         checkMenu();
         hidePreloader();
+        startHomeAnimation();
         showSchedule($(".conference-timings-day.active"));
     }
 
@@ -29,6 +30,16 @@ $(document).ready(function (e) {
         } else {
             menu.removeClass('fixed-layout');
         }
+    }
+
+    function startHomeAnimation(){
+        $("#home .logo-home, #home .tagline").hide();
+        setTimeout(function(){
+            $("#home .logo-home").fadeIn(1000);
+            setTimeout(function(){
+                $("#home .tagline").fadeIn(500);
+            }, 1200);
+        }, 1000);
     }
 
     function hidePreloader() {

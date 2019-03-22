@@ -3,14 +3,37 @@
     --secondary: #ffd900;
 }
 
-.text-primary {
+@font-face {
+    font-family: 'Amperzand';
+    src: url('fonts/amperzand-webfont.woff2') format('woff2'),
+         url('fonts/amperzand-webfont.woff') format('woff'),
+         url('fonts/amperzand-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anada Neptouch 2';
+    src: url('fonts/ananda_neptouch_2-webfont.woff2') format('woff2'),
+         url('fonts/ananda_neptouch_2-webfont.woff') format('woff'),
+         url('fonts/ananda_neptouch_2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-primary,
+a.text-primary:hover,
+a.text-primary:focus {
     color: var(--primary) !important;
     transition: 0.5s all;
+    font-family: 'Amperzand', 'Archivo Narrow', sans-serif !important;
 }
 
 .text-secondary {
     color: var(--secondary) !important;
     transition: 0.5s all;
+    font-family: 'Anada Neptouch 2', sans-serif !important;
 }
 
 .text-light {
@@ -238,9 +261,6 @@ section.full-page {
 }
 
 #mainNavbar .nav-link {
-    color: var(--primary);
-    font-family: 'Karla', sans-serif;
-    font-weight: 500;
     transition: 0.3s all;
     border-radius: 20px;
     padding: 7px 10px;
@@ -301,6 +321,11 @@ section.full-page {
 #home .background-layer.image {
     background-size: 40%;
     opacity: 0.05;
+}
+.tagline {
+    font-family: 'Amperzand', sans-serif;
+    font-size: 2.5em;
+    color: #ff0000;
 }
 
 /** Speaker Profile **/
@@ -400,7 +425,7 @@ section.full-page {
 }
 
 .section-heading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Amperzand', 'Raleway', sans-serif;
     font-weight: 700;
     color: var(--primary);
     font-size: 72px;
@@ -597,4 +622,9 @@ section.full-page {
     font-weight: bold;
     display: inline-block;
     border-radius: 0.5em;
+}
+
+.logo-home {
+    width: 300px;
+    height: auto;
 }
