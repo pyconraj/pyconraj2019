@@ -13,7 +13,20 @@ $(document).ready(function (e) {
     $(".conference-timings-day").on('click', function(e){
         e.preventDefault();
         showSchedule($(this));
-    })
+    });
+
+    $(".smooth-scroll").on("click", function(e){
+        let hash = this.hash;
+        let target = $(hash);
+        if(target != undefined || target != 'undefined'){
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 2000, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
 
     function init() {
         checkMenu();
