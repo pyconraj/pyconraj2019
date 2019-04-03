@@ -230,11 +230,12 @@ section.full-page {
     left: 0;
     right: 0;
     text-align: center;
+    margin-top: -15px;
 }
 
 #mainNavbarContent {
     background: var(--white);
-    height: inherit;
+    height: auto;
 }
 
 @media all and (min-width: 991px) {
@@ -247,10 +248,12 @@ section.full-page {
 
     #mainNavbar .navbar-brand {
         /* position: absolute; */
+        margin-top: 0;
     }
 
     #mainNavbarContent {
         background: transparent;
+        height: inherit;
     }
 
 }
