@@ -100,20 +100,30 @@
                 </div>
                 <div class="col-12 col-md-4 text-center">
                     <h3 class="text-primary">Venue</h3>
-                    <h4 class="text-secondary text-light">TBD</h4>
+                    <h4 class="text-secondary text-light">NIrmala Auditorium, Pratap Nagar, Jaipur</h4>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about" class="full-page container-fluid">
+    <section id="about" class="full-page container">
         <div class="background"></div>
         <div class="content py-5">
             <div class="row">
                 <div class="col-12 section-heading" data-text="About">About Us</div>
-                <div class="col-12 section-description">Sint ex do sit adipisicing consectetur qui.</div>
+                <div class="col-12 section-description">A premiere Python Conference</div>
             </div>
-            <div class="row">
-                
+            <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8">
+                    <p class="description">
+                        PyCon conference is hosted annually by PyCon Community with an aim to promote Python programming language. We provide a single platform to users from different spheres such as students, global entrepreneurs and professionals from startups and established firms to connect and share their ideas. Experts from various domains showcase their use of Python besides discussing about the recent and upcoming trends in technology.
+                    </p>
+                    <p class="description">
+                        All the participants are requested to follow Code of Conduct and we will ensure the same.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" src="static/images/logo.png" />
+                </div>
             </div>
         </div>
     </section>
@@ -228,117 +238,176 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12 col-md-4 conference-timings-day active" data-target="#conference-table-1">
-                            <div class="month">June</div>
-                            <div class="date">8</div>
-                            <div class="day">Saturday</div>
-                            <div class="plan">Workshops</div>
+                            <div class="row align-items-center">
+                                <div class="col-2 col-md-12 p-0 month">June</div>
+                                <div class="col-3 col-md-12 p-0 date">8</div>
+                                <div class="col-3 col-md-12 p-0 day">Saturday</div>
+                                <div class="col-4 col-md-12 p-0 plan">Workshops</div>
+                            </div>
                         </div>
                         <div class="col-12 col-md-4 conference-timings-day" data-target="#conference-table-2">
-                            <div class="month">June</div>
-                            <div class="date">9</div>
-                            <div class="day">Sunday</div>
-                            <div class="plan">Workshops</div>
+                            <div class="row align-items-center">
+                                <div class="col-2 col-md-12 p-0 month">June</div>
+                                <div class="col-3 col-md-12 p-0 date">9</div>
+                                <div class="col-3 col-md-12 p-0 day">Sunday</div>
+                                <div class="col-4 col-md-12 p-0 plan">Workshops</div>
+                            </div>
                         </div>
                         <div class="col-12 col-md-4 conference-timings-day" data-target="#conference-table-3">
-                            <div class="month">June</div>
-                            <div class="date">10</div>
-                            <div class="day">Monday</div>
-                            <div class="plan">Workshops</div>
+                            <div class="row align-items-center">
+                                <div class="col-2 col-md-12 p-0 month">June</div>
+                                <div class="col-3 col-md-12 p-0 date">10</div>
+                                <div class="col-3 col-md-12 p-0 day">Monday</div>
+                                <div class="col-4 col-md-12 p-0 plan">Workshops</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row conference-timings-table px-2 mx-auto text-center table-responsive">
-                <table class="table mx-auto" id="conference-table-1">
-                    <tbody>
-                        <tr>
-                            <td class="timings">08:00 AM - 09:30 AM</td>
-                            <td colspan="3" class="event">
-                                <div class="title">Registrations</div>
-                                <div class="speaker"></div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="timings">09:31 AM - 10:30 AM</td>
-                            <td class="event">
-                                <div class="title">Talk 1</div>
-                                <div class="speaker">By Speaker 1</div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 2</div>
-                                <div class="speaker">By Speaker 2</div>
-                                <div class="track">Track 1</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 3</div>
-                                <div class="speaker">By Speaker 3</div>
-                                <div class="track">Track 2</div>
-                            </td>
-                        </tr>
-                    </tbody>
+            <div class="row conference-timings-table px-2 mx-auto text-center">
+                <div class="mx-auto conference-timings-table-container container" id="conference-table-1">
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">08:00 AM - 09:30 AM</div>
+                        <div class="event col-12 col-md-8">
+                            <div class="title">Registrations</div>
+                            <div class="speaker"></div>
+                            <div class="track">Main Hall</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">09:31 AM - 10:30 AM</div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 1</div>
+                                    <div class="speaker">By Speaker 1</div>
+                                    <div class="track">Main Hall</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 2</div>
+                                    <div class="speaker">By Speaker 2</div>
+                                    <div class="track">Track 1</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 3</div>
+                                    <div class="speaker">By Speaker 3</div>
+                                    <div class="track">Track 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conference-timings-table-container container mx-auto" id="conference-table-2">
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">08:00 AM - 09:30 AM</div>
+                        <div class="event col-12 col-md-8">
+                            <div class="title">Registrations</div>
+                            <div class="speaker"></div>
+                            <div class="track">Main Hall</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">09:31 AM - 10:30 AM</div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 1</div>
+                                    <div class="speaker">By Speaker 1</div>
+                                    <div class="track">Main Hall</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 2</div>
+                                    <div class="speaker">By Speaker 2</div>
+                                    <div class="track">Track 1</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 3</div>
+                                    <div class="speaker">By Speaker 3</div>
+                                    <div class="track">Track 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conference-timings-table-container container mx-auto" id="conference-table-3">
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">08:00 AM - 09:30 AM</div>
+                        <div class="event col-12 col-md-8">
+                            <div class="title">Registrations</div>
+                            <div class="speaker"></div>
+                            <div class="track">Main Hall</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="timings col-12 col-md-4">09:31 AM - 10:30 AM</div>
+                        <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 1</div>
+                                    <div class="speaker">By Speaker 1</div>
+                                    <div class="track">Main Hall</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 2</div>
+                                    <div class="speaker">By Speaker 2</div>
+                                    <div class="track">Track 1</div>
+                                </div>
+                                <div class="event col-12 col-md-4">
+                                    <div class="title">Talk 3</div>
+                                    <div class="speaker">By Speaker 3</div>
+                                    <div class="track">Track 2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </table>
-                <table class="table mx-auto" id="conference-table-2">
-                    <tbody>
-                        <tr>
-                            <td class="timings">08:00 AM - 09:30 AM</td>
-                            <td colspan="3" class="event">
-                                <div class="title">Registrations</div>
-                                <div class="speaker"></div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="timings">09:31 AM - 10:30 AM</td>
-                            <td class="event">
-                                <div class="title">Talk 1</div>
-                                <div class="speaker">By Speaker 1</div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 2</div>
-                                <div class="speaker">By Speaker 2</div>
-                                <div class="track">Track 1</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 3</div>
-                                <div class="speaker">By Speaker 3</div>
-                                <div class="track">Track 2</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table mx-auto" id="conference-table-3">
-                    <tbody>
-                        <tr>
-                            <td class="timings">08:00 AM - 09:30 AM</td>
-                            <td colspan="3" class="event">
-                                <div class="title">Registrations</div>
-                                <div class="speaker"></div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="timings">09:31 AM - 10:30 AM</td>
-                            <td class="event">
-                                <div class="title">Talk 1</div>
-                                <div class="speaker">By Speaker 1</div>
-                                <div class="track">Main Hall</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 2</div>
-                                <div class="speaker">By Speaker 2</div>
-                                <div class="track">Track 1</div>
-                            </td>
-                            <td class="event">
-                                <div class="title">Talk 3</div>
-                                <div class="speaker">By Speaker 3</div>
-                                <div class="track">Track 2</div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            </div>
+        </div>
+    </section>
+    <section id="tickets">
+        <div class="background"></div>
+        <div class="content py-5 container">
+            <div class="row">
+                <div class="col-12 section-heading" data-text="Tickets">Tickets</div>
+                <div class="col-12 section-description">Tickets available Soon!</div>
+            </div>
+            <div class="tickets-row row">
+                <div class="col-12 ticket">
+                    <div class="row">
+                        <div class="col-5 ticket-title">Student Ticket</div>
+                        <div class="col-4 ticket-price">INR 2153 <br><span class="text-muted">(GST Applicable)</span></div>
+                        <div class="col-3 ticket-link">
+                            <a href="#" class="btn btn-theme">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ticket">
+                    <div class="row">
+                        <div class="col-5 ticket-title">Early Bird Ticket</div>
+                        <div class="col-4 ticket-price">INR 500 <br><span class="text-muted">(GST Applicable)</span></div>
+                        <div class="col-3 ticket-link">
+                            <a href="#" class="btn btn-theme">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ticket">
+                    <div class="row">
+                        <div class="col-5 ticket-title">Normal Ticket</div>
+                        <div class="col-4 ticket-price">TBD <br><span class="text-muted">(GST Applicable)</span></div>
+                        <div class="col-3 ticket-link">
+                            <a href="" class="btn btn-theme">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 ticket">
+                    <div class="row">
+                        <div class="col-5 ticket-title">Supporter</div>
+                        <div class="col-4 ticket-price">TBD <br><span class="text-muted">(GST Applicable)</span></div>
+                        <div class="col-3 ticket-link">
+                            <a href="" class="btn btn-theme">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

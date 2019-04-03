@@ -116,7 +116,7 @@ section.full-page {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 300;
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 .logo {
@@ -463,6 +463,18 @@ section.full-page {
     background-size: contain;
     background-repeat: no-repeat;
 }
+@media all and (max-width: 768px){
+    .section-heading {
+        font-size: 40px;
+    }
+    .section-heading::before {
+        font-size: 40px;
+    }
+    .section-heading::after {
+        width: 90px;
+        height: 50px;
+    }
+}
 
 .section-description {
     text-align: center;
@@ -556,7 +568,14 @@ section.full-page {
     font-family: 'Archivo Narrow', sans-serif;
     text-transform: uppercase;
 }
-
+/* @media all and (max-width: 768px) {
+    .conference-timings-day .month,
+    .conference-timings-day .day,
+    .conference-timings-day .plan,
+    .conference-timings-day .date {
+        display: inline;
+    }
+} */
 .conference-timings-day .date {
     font-size: 30px;
     font-weight: bold;
@@ -582,18 +601,20 @@ section.full-page {
 .conference-timings-day:hover .date::before{
     opacity: 1;
 }
-.conference-timings-table table{
+.conference-timings-table-container{
     display: none;
 }
-.conference-timings-table tr {
+.conference-timings-table-container>.row {
     margin-top: 18px;
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.05);
     /* border-top-right-radius: 20px;
     border-bottom-left-radius: 20px; */
     border-top: 1px solid #ff0000;
     transition: 0.3s all;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-.conference-timings-table tr:hover {
+.conference-timings-table-container>.row:hover {
     /* background-color: #ff0000; */
     /* color: #FFF; */
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
@@ -627,4 +648,39 @@ section.full-page {
 .logo-home {
     width: 300px;
     height: auto;
+}
+
+.ticket {
+    margin-top: 20px;
+    background-color: #FFF;
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.05);
+    padding: 20px; 
+    border-left: 4px solid #ff0000;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.ticket:hover {
+    border-left-color: #ffd900;
+}
+
+.ticket-title {
+    color: #ff0000;
+    font-family: 'Amperzand', 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn-theme {
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    font-family: 'Amperzand', 'Raleway', sans-serif;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-theme:hover {
+    background-color: #ff0000;
+    color: #FFF;
 }
